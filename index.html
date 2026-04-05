@@ -11,8 +11,10 @@
         nav a { margin: 0 15px; font-size: 1.1em; text-decoration: none; color: #0066cc; }
         section { margin-bottom: 60px; }
         h2 { color: #0066cc; }
+        h3 { color: #333; }
         ul { padding-left: 20px; }
         .footer { text-align: center; font-size: 0.9em; color: #666; margin-top: 60px; }
+        .highlight { background: #f0f8ff; padding: 15px; border-radius: 8px; margin: 20px 0; }
     </style>
 </head>
 <body>
@@ -31,24 +33,31 @@
 
         <h3>1. Information We Collect</h3>
         <ul>
-            <li>Any topic and specifications you type to generate a lecture.</li>
-            <li>The generated lecture (text + audio) is automatically saved to our public cloud archive.</li>
+            <li>Topics and specifications you type to generate lectures.</li>
+            <li><strong>Voice cloning samples</strong> — you record a voice sample (15–40 seconds) once per voice. These are stored <strong>only on your device</strong> (private app storage). Up to 5 voices can be saved.</li>
             <li>Subscription & billing data via RevenueCat (Apple/Google handle payments).</li>
             <li>Minimal technical data (IP address, device type) for security only.</li>
         </ul>
         <p><strong>No analytics, no crash reporting, no sign-in.</strong></p>
 
-        <h3>2. Public Lectures</h3>
-        <p>Every lecture you create becomes publicly visible. Anyone using the app can browse, search, and listen to it. Lectures cannot be deleted.</p>
+        <div class="highlight">
+            <h3>Voice Cloning Feature</h3>
+            <p>When you enable voice cloning, your recorded voice sample is sent to our TTS provider (Chatterbox on Modal) during lecture generation. The sample is <strong>not stored</strong> on our servers after synthesis. The finished voice-cloned lecture is saved <strong>only on your device</strong> and is <strong>not added</strong> to the public archive.</p>
+        </div>
+
+        <h3>2. Public Lectures (Non-Voice-Cloned Only)</h3>
+        <p>Standard (non-voice-cloned) lectures are automatically saved to our public cloud archive. Anyone using the app can browse, search, and listen to them. These lectures cannot be deleted.</p>
 
         <h3>3. How We Use & Share Information</h3>
-        <p>We send your topic to xAI (primary) and fallback providers (Gemini, Groq, Chatterbox) to generate the lecture and audio. We do not sell your data.</p>
+        <p>We send your topic + specifications (and voice sample when cloning is enabled) to xAI (primary) and fallback providers (Gemini, Groq, Chatterbox on Modal) to generate lectures and audio. We do not sell your data.</p>
 
         <h3>4. Data Retention</h3>
-        <p>Lectures are stored permanently in the public archive.</p>
+        <p>• Voice samples remain on your device until you delete the voice or clear app data.<br>
+           • Non-clone lectures are stored permanently in the public archive.<br>
+           • Cloned lectures are stored only locally on your device.</p>
 
         <h3>5. Your Rights</h3>
-        <p>You can report inappropriate content. You can download the text of any lecture to your device.</p>
+        <p>You can delete your own voice samples from the device (My Voices screen). You can report inappropriate content. You can download the text of any lecture to your device.</p>
 
         <h3>6. Children</h3>
         <p>The App is for users 13 years and older.</p>
@@ -60,21 +69,27 @@
         <p>By using Hearken you agree to these Terms.</p>
 
         <h3>1. The Service</h3>
-        <p>You type a topic → we generate a lecture using xAI (primary) + fallbacks. Lectures are saved to a public archive everyone can browse and listen to.</p>
+        <p>You type a topic → we generate a lecture using xAI (primary) + fallbacks. You can optionally clone your voice (record once, reuse locally). Voice-cloned lectures are saved only on your device and are <strong>not added</strong> to the public archive.</p>
 
         <h3>2. Subscriptions</h3>
         <p>Monthly and yearly subscriptions are handled 100% through RevenueCat + Google Play / Apple App Store. Cancel anytime in your store account.</p>
 
-        <h3>3. User Content & Public Archive</h3>
-        <p>By generating a lecture you grant us a perpetual license to store it publicly. Lectures cannot be deleted once published.</p>
+        <h3>3. User Content & Voice Cloning</h3>
+        <p>• You own the topics you type and the voice samples you record.<br>
+           • Voice samples are stored only on your device.<br>
+           • By generating a lecture with voice cloning, you grant us permission to send your voice sample to Chatterbox on Modal for synthesis.<br>
+           • Voice-cloned lectures are <strong>private to your device</strong> and never become part of the public archive.</p>
 
-        <h3>4. Content Rules</h3>
-        <p>You are responsible for your inputs. We use filters, but we are not responsible for AI-generated content.</p>
+        <h3>4. Public Archive</h3>
+        <p>Only non-voice-cloned lectures are published to the public archive. These cannot be deleted once published.</p>
 
-        <h3>5. No Warranty & Limitation of Liability</h3>
+        <h3>5. Content Rules</h3>
+        <p>You are responsible for your inputs and voice samples. We use filters, but we are not responsible for AI-generated content.</p>
+
+        <h3>6. No Warranty & Limitation of Liability</h3>
         <p>The App is provided “AS IS”. Severin is not liable for any damages.</p>
 
-        <h3>6. Governing Law</h3>
+        <h3>7. Governing Law</h3>
         <p>Laws of the Republic of Armenia.</p>
     </section>
 
