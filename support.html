@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearken • Support</title>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
+        h1 { text-align: center; }
+        nav { text-align: center; margin: 30px 0; }
+        nav a { margin: 0 15px; font-size: 1.1em; text-decoration: none; color: #0066cc; }
+        section { margin-bottom: 50px; }
+        h2 { color: #0066cc; }
+        .contact-box { background: #f0f8ff; padding: 25px; border-radius: 12px; margin: 30px 0; }
+        .footer { text-align: center; font-size: 0.9em; color: #666; margin-top: 60px; }
+        .btn { display: inline-block; background: #0066cc; color: white; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 500; }
+        .btn:hover { background: #0055aa; }
+    </style>
+</head>
+<body>
+    <h1>Hearken</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="index.html#privacy">Privacy Policy</a> |
+        <a href="index.html#terms">Terms of Service</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Support</h2>
+        <p>Need help with Hearken? We're happy to assist you.</p>
+
+        <div class="contact-box" id="contact">
+            <h3 style="margin-top:0;">Get in touch</h3>
+            
+            <p><strong>Email:</strong> <a href="mailto:severrrrin@gmail.com">severrrrin@gmail.com</a></p>
+            <p style="margin: 20px 0 10px;">We usually reply within 24 hours.</p>
+
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="margin-top: 25px;">
+                <div style="margin-bottom: 15px;">
+                    <label style="display:block; margin-bottom:5px; font-weight:500;">Your Name</label>
+                    <input type="text" name="name" required style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px; font-size:16px;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label style="display:block; margin-bottom:5px; font-weight:500;">Your Email</label>
+                    <input type="email" name="email" required style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px; font-size:16px;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label style="display:block; margin-bottom:5px; font-weight:500;">Message</label>
+                    <textarea name="message" rows="6" required style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px; font-size:16px;" placeholder="How can we help you with Hearken?"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p style="font-size: 0.85em; color: #666; margin-top: 10px;">This form is powered by Formspree (secure & free)</p>
+        </div>
+    </section>
+
+    <div class="footer">
+        © Severin • Hearken<br>
+        Contact: severrrrin@gmail.com<br>
+        Last updated: April 20, 2026
+    </div>
+</body>
+</html>
