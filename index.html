@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hearken • Privacy Policy & Terms of Service</title>
+    <title>Hearken • Privacy Policy & Terms of Use</title>
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
         h1 { text-align: center; }
@@ -14,90 +14,124 @@
         h3 { color: #333; }
         ul { padding-left: 20px; }
         .footer { text-align: center; font-size: 0.9em; color: #666; margin-top: 60px; }
-        .highlight { background: #f0f8ff; padding: 15px; border-radius: 8px; margin: 20px 0; }
     </style>
 </head>
 <body>
 
     <h1>Hearken</h1>
-         <nav>
-         <a href="#privacy">Privacy Policy</a> |
-         <a href="#terms">Terms of Service & EULA</a> |
-         <a href="support.html">Support</a>
+    <nav>
+        <a href="#privacy">Privacy Policy</a> |
+        <a href="#terms">Terms of Use & EULA</a> |
+        <a href="support.html">Support</a>
     </nav>
 
     <section id="privacy">
         <h2>Privacy Policy</h2>
-        <p><strong>Effective date: April 5, 2026</strong></p>
-        <p>Hearken (“App”, “we”, “us”, “our”) is operated by <strong>Severin (Individual Entrepreneur registered in the Republic of Armenia)</strong>.</p>
-        <p><strong>Contact:</strong> severrrrin@gmail.com</p>
-
-        <h3>1. Information We Collect</h3>
+        <p><strong>Effective date: October 26, 2026 (replaces the version of April 5, 2026)</strong></p>
+        <p>Hearken ("App", "we", "us", "our") is operated by Magomedsaip Omarov.</p>
+        <p>Contact: <a href="mailto:severrrrin@gmail.com">severrrrin@gmail.com</a></p>
+        <h3>1. Information We Handle</h3>
         <ul>
-            <li>Topics and specifications you type to generate lectures.</li>
-            <li><strong>Voice cloning samples</strong> — you record a voice sample (15–40 seconds) once per voice. These are stored <strong>only on your device</strong> (private app storage). Up to 5 voices can be saved.</li>
-            <li>Subscription & billing data via RevenueCat (Apple/Google handle payments).</li>
-            <li>Minimal technical data (IP address, device type) for security only.</li>
+            <li>Lecture requests: the topic you type and your lecture settings (length, language, voice, style options).</li>
+            <li>Generated lectures: the script text and audio created for you.</li>
+            <li>Voice recordings (only if you use voice cloning): three short samples you record. Copies stay in the app's private storage on your device. They are also uploaded to Fish Audio, which creates and stores a private voice model from them.</li>
+            <li>Content reports: the reasons you select, the identifier of the reported lecture, and an anonymous app ID.</li>
+            <li>Purchases: subscription status and purchase history, handled by RevenueCat with an anonymous ID. Apple processes all payments; we never see your payment details.</li>
+            <li>Technical data: our hosting and AI providers automatically receive your IP address, device and app version, and request times in their server logs.</li>
         </ul>
-        <p><strong>No analytics, no crash reporting, no sign-in.</strong></p>
-
-        <div class="highlight">
-            <h3>Voice Cloning Feature</h3>
-            <p>When you enable voice cloning, your recorded voice sample is sent to our TTS provider (Fish Audio) during lecture generation. The sample is <strong>not stored</strong> on our servers after synthesis. The finished voice-cloned lecture is saved <strong>only on your device</strong> and is <strong>not added</strong> to the public archive.</p>
-        </div>
-
-        <h3>2. Public Lectures (Non-Voice-Cloned Only)</h3>
-        <p>Standard (non-voice-cloned) lectures are automatically saved to our public cloud archive. Anyone using the app can browse, search, and listen to them. These lectures cannot be deleted.</p>
-
-        <h3>3. How We Use & Share Information</h3>
-        <p>We send your topic + specifications (and voice sample when cloning is enabled) to xAI (primary) and fallback providers (Gemini, Groq, Fish Audio) to generate lectures and audio. We do not sell your data.</p>
-
-        <h3>4. Data Retention</h3>
-        <p>• Voice samples remain on your device until you delete the voice or clear app data.<br>
-           • Non-clone lectures are stored permanently in the public archive.<br>
-           • Cloned lectures are stored only locally on your device.</p>
-
-        <h3>5. Your Rights</h3>
-        <p>You can delete your own voice samples from the device (My Voices screen). You can report inappropriate content. You can download the text of any lecture to your device.</p>
-
+        <p>We do not use analytics, advertising, or crash-reporting tools, we do not track you across apps or websites, and there is no sign-in.</p>
+        <h3>2. Who Receives Your Information</h3>
+        <ul>
+            <li>Supabase: hosts the community catalog database, the lecture audio storage, and the server functions that relay requests to our AI providers.</li>
+            <li>xAI: receives your topic, settings, and the writing instructions to create the script; searches the web and X for recent topics and news; reads lectures in the xAI voices (every voice except Alex), in which case it receives the script.</li>
+            <li>Groq: backup script writer when xAI is unavailable; receives your topic, settings, and the writing instructions.</li>
+            <li>Fish Audio: reads lectures in the Alex voice and stands in when another voice is unavailable; in both cases it receives the script to turn it into speech. For voice cloning it receives your recordings and stores the voice model created from them. Fish Audio's terms allow it to use the content it processes, including scripts and voice recordings, to develop and improve its AI models.</li>
+            <li>RevenueCat: manages subscriptions and purchases using an anonymous ID.</li>
+            <li>Apple: processes payments and provides App Store services.</li>
+        </ul>
+        <p>Each provider receives only what it needs to perform its service for us and processes it under its own terms and privacy policy. We only use providers that commit to protecting your information at least as well as this policy describes. We do not sell your information.</p>
+        <p>Before your first lecture, and again whenever this list of AI providers changes, the app asks for your permission before sending anything to them. Voice cloning has its own separate permission.</p>
+        <h3>3. Public Community Catalog</h3>
+        <p>Lectures made with standard voices are checked by our server and, if approved, shared to the public community catalog. Anyone using Hearken can browse, search, and listen to them, including the topic and script text. Lectures made with a cloned voice are never shared. You can hide any catalog lecture on your device and report it to us.</p>
+        <h3>4. How Long We Keep Information</h3>
+        <ul>
+            <li>Your library, settings, and voice recordings on your device: until you delete them or delete the App.</li>
+            <li>Fish Audio voice models: until you delete the voice in My Voices. Deleting the voice deletes the model at Fish Audio right away, or the next time you open the App if you are offline.</li>
+            <li>Public catalog lectures: until we remove them, for example after a valid report or a removal request.</li>
+            <li>Content reports: up to 12 months.</li>
+            <li>AI providers may keep limited request logs under their own retention policies to operate and protect their services.</li>
+            <li>Server logs at our hosting provider: kept for a limited period according to its log-retention settings.</li>
+            <li>Purchase records: kept by Apple and RevenueCat as needed to provide your subscription and as required by law.</li>
+        </ul>
+        <h3>5. Your Choices and Rights</h3>
+        <ul>
+            <li>Withdraw AI consent: Adjust &gt; AI data sharing &gt; Reset. Nothing new is sent to AI providers until you allow it again; generating a lecture requires it.</li>
+            <li>Delete a cloned voice: My Voices &gt; Delete. This also deletes the voice model at Fish Audio.</li>
+            <li>Hide or report a catalog lecture from the Home screen or the player.</li>
+            <li>Ask us to remove a published lecture, or personal information about you in one: email us with the lecture topic, or use the report option "Contains personal information about me or someone else". We review reports and requests promptly, normally within 24 hours.</li>
+            <li>Ask for a copy or deletion of any other information we hold about you: email us.</li>
+            <li>Download the text of any lecture you play.</li>
+        </ul>
         <h3>6. Children</h3>
         <p>The App is for users 13 years and older.</p>
+        <h3>7. Changes to This Policy</h3>
+        <p>We will update the effective date above when this policy changes, and the App will ask for your permission again when the AI providers that receive your information change.</p>
     </section>
 
     <section id="terms">
-        <h2>Terms of Service & End User License Agreement</h2>
-        <p><strong>Effective date: April 5, 2026</strong></p>
+        <h2>Terms of Use &amp; End User License Agreement</h2>
+        <p><strong>Effective date: November 8, 2026 (replaces the version of October 27, 2026)</strong></p>
+        <p>Hearken ("App") is operated by Magomedsaip Omarov ("we", "us"). Contact: <a href="mailto:severrrrin@gmail.com">severrrrin@gmail.com</a></p>
         <p>By using Hearken you agree to these Terms.</p>
-
         <h3>1. The Service</h3>
-        <p>You type a topic → we generate a lecture using xAI (primary) + fallbacks. You can optionally clone your voice (record once, reuse locally). Voice-cloned lectures are saved only on your device and are <strong>not added</strong> to the public archive.</p>
-
-        <h3>2. Subscriptions</h3>
-        <p>Monthly and yearly subscriptions are handled 100% through RevenueCat + Google Play / Apple App Store. Cancel anytime in your store account.</p>
-
-        <h3>3. User Content & Voice Cloning</h3>
-        <p>• You own the topics you type and the voice samples you record.<br>
-           • Voice samples are stored only on your device.<br>
-           • By generating a lecture with voice cloning, you grant us permission to send your voice sample to Fish Audio for synthesis.<br>
-           • Voice-cloned lectures are <strong>private to your device</strong> and never become part of the public archive.</p>
-
-        <h3>4. Public Archive</h3>
-        <p>Only non-voice-cloned lectures are published to the public archive. These cannot be deleted once published.</p>
-
-        <h3>5. Content Rules</h3>
-        <p>You are responsible for your inputs and voice samples. We use filters, but we are not responsible for AI-generated content.</p>
-
-        <h3>6. No Warranty & Limitation of Liability</h3>
-        <p>The App is provided “AS IS”. Severin is not liable for any damages.</p>
-
-        <h3>7. Governing Law</h3>
+        <p>You type a topic and Hearken creates a spoken lecture using AI providers (xAI, Groq, and Fish Audio). AI-generated lectures can contain mistakes. They are for general information and relaxation only and are not medical, legal, financial, or other professional advice.</p>
+        <h3>2. Subscriptions and Minutes</h3>
+        <ul>
+            <li>Basic and Premium are auto-renewing subscriptions, billed monthly or yearly through Apple.</li>
+            <li>Payment is charged to your Apple Account when you confirm the purchase. A subscription renews automatically at the same price for the same period unless you cancel it at least 24 hours before the current period ends; your account is charged for the renewal within the 24 hours before the period ends.</li>
+            <li>You can manage or cancel subscriptions in Settings &gt; Apple Account &gt; Subscriptions. Cancelling stops future renewals; access continues until the end of the paid period.</li>
+            <li>Each plan includes an allowance of generated minutes for every month of the subscription, including each month of a yearly plan. Unused generated minutes do not carry over to the next month.</li>
+            <li>Listening is free for everyone, with or without a subscription: playing community catalog lectures and your saved lectures does not use minutes. Minutes are used only for generating new lectures.</li>
+            <li>New installs include free starter minutes.</li>
+            <li>Add-on minute packs are one-time purchases that never expire. They are stored on the device where you bought them and are not transferred to another device or restored after reinstalling the App.</li>
+            <li>Generated minutes are counted in 15-minute increments; the actual length of a lecture can vary.</li>
+            <li>Refunds are handled by Apple under its policies.</li>
+        </ul>
+        <h3>3. Your Content and Voice Cloning</h3>
+        <ul>
+            <li>You keep ownership of the topics you type and the voice samples you record.</li>
+            <li>You give us permission to process them to provide the service, and, for lectures made with standard voices, to publish the resulting lecture in the community catalog.</li>
+            <li>Only clone your own voice, or a voice whose owner has given you permission. Do not use voice cloning to impersonate anyone.</li>
+            <li>Your voice samples are sent to Fish Audio to create a private voice model. Deleting the voice in My Voices deletes that model.</li>
+            <li>Lectures made with a cloned voice stay on your device and are never published.</li>
+        </ul>
+        <h3>4. Community Catalog and Content Rules</h3>
+        <p>We have zero tolerance for objectionable content and abusive users. You may not request or publish content that:</p>
+        <ul>
+            <li>is sexual, or involves minors in any harmful or sexual way;</li>
+            <li>promotes hatred, harassment, threats, or violence against people or groups;</li>
+            <li>encourages self-harm or gives instructions for weapons, drugs, or other dangerous or illegal acts;</li>
+            <li>contains personal information about private individuals or false claims about them;</li>
+            <li>infringes someone else's rights.</li>
+        </ul>
+        <p>We filter topics and lecture scripts, review reports promptly (normally within 24 hours), remove content that breaks these rules, and block the anonymous app IDs of users who violate them. You can hide or report any catalog lecture in the App.</p>
+        <h3>5. License</h3>
+        <p>We grant you a limited, non-transferable license to use the App on Apple devices you own or control, as permitted by Apple's Usage Rules. You may not copy, modify, resell, or reverse engineer the App except as allowed by law.</p>
+        <h3>6. Apple</h3>
+        <p>These Terms are between you and us, not Apple. Apple is not responsible for the App or its content, has no obligation to provide maintenance or support, and is not responsible for any product claims, legal-compliance claims, or intellectual-property claims relating to the App. If the App fails to conform to an applicable warranty, you may notify Apple, which may refund the purchase price; Apple has no other warranty obligation. Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you. You confirm that you are not located in a country subject to a U.S. Government embargo and are not on any U.S. Government list of prohibited or restricted parties.</p>
+        <h3>7. No Warranty and Limitation of Liability</h3>
+        <p>The App is provided "as is". To the extent permitted by law, Magomedsaip Omarov is not liable for any damages arising from your use of the App or of AI-generated content.</p>
+        <h3>8. Changes</h3>
+        <p>We may update these Terms. The effective date above shows when they last changed. Continuing to use the App after a change means you accept the updated Terms.</p>
+        <h3>9. Governing Law</h3>
         <p>Laws of the Republic of Armenia.</p>
+        <h3>10. Contact</h3>
+        <p>Questions or complaints: <a href="mailto:severrrrin@gmail.com">severrrrin@gmail.com</a></p>
     </section>
 
     <div class="footer">
-        © Severin • Hearken<br>
-        Contact: severrrrin@gmail.com<br>
-        Last updated: April 5, 2026
+        Hearken<br>
+        Contact: <a href="mailto:severrrrin@gmail.com">severrrrin@gmail.com</a>
     </div>
 
 </body>
